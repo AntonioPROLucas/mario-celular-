@@ -8,11 +8,28 @@
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="src/css/responsivo.css">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script>
+        window.addEventListener("orientationchange", function() {
+           if (window.orientation !== 0) {
+              // Bloqueie a orientação em paisagem
+              screen.orientation.lock("portrait").catch(function(error) {
+                 console.error("Falha ao bloquear a orientação:", error);
+              });
+           }
+        });
+     
+        // Execute uma verificação inicial
+        if (window.orientation !== 0) {
+           screen.orientation.lock("portrait").catch(function(error) {
+              console.error("Falha ao bloquear a orientação:", error);
+           });
+        }
+     </script>
     <script src="./src/js/script.js" defer></script>
 
     <title>Mario Jump | Smartphone</title>
 </head>
-<body>
+<body orientation="portrait">
     <div class="background"></div>
     <div class="game-board">
         <img src="src/img/mario running.gif" class="mario">
