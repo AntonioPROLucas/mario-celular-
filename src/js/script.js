@@ -48,7 +48,7 @@ const gameLoop = setInterval(() => {
         mario.style.height = '64px'
         mario.style.marginLeft = '35px';
 
-        gameOver.style.right = '-150px';
+        gameOver.style.right = '-100px';
 
         clearInterval(gameLoop);
         clearInterval(scoreInterval);
@@ -66,7 +66,7 @@ const gameLoop = setInterval(() => {
         mario.src = "src/img/mario-gameover.png";
         mario.style.height = '64px'
         mario.style.marginLeft = '35px';
-        gameOver.style.right = '-150px';
+        gameOver.style.right = '-100px';
 
         clearInterval(gameLoop);
         clearInterval(scoreInterval);

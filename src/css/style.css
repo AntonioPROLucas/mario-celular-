@@ -63,12 +63,12 @@ body{
     position: relative;
     z-index: 3;
     bottom: -200px;
-    right: -10000px;
+    right: -800px;
 }
 
 .game-over .endgame{
     position: relative;
-    width: 250px;
+    width: 200px;
     z-index: 3;
 }
 
