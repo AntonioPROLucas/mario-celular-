@@ -1,0 +1,47 @@
+@media (max-height: 1055px){
+    .background{
+        bottom: 45%;
+        height: 55vh;
+        }
+}
+@media (max-height: 900px){
+    .background{
+        bottom: 35%;
+        }
+}
+
+@media (max-height: 812px){
+    .background{
+        bottom: 30%;
+        }
+}
+@media (max-height: 750px){
+    .background{
+        bottom: 25%;
+        }
+}
+@media (max-height: 700px){
+    .background{
+        bottom: 20%;
+        }
+}
+@media (max-height: 670px){
+    .background{
+        bottom: 18%;
+        }
+}
+@media (max-height: 650px){
+    .background{
+        bottom: 15%;
+        }
+}
+@media (max-height: 630px){
+    .background{
+        bottom: 12%;
+        }
+}
+@media (max-height: 550px){
+    .background{
+        bottom: 2%;
+        }
+}
