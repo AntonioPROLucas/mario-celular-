@@ -40,8 +40,15 @@
         bottom: 12%;
         }
 }
-@media (max-height: 550px){
+
+@media (max-height: 600px){
     .background{
-        bottom: 2%;
+        bottom: 5%;
+        }
+}
+
+@media (max-height: 560px){
+    .background{
+        bottom: 0.000001%;
         }
 }

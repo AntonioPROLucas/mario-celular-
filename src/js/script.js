@@ -7,7 +7,14 @@ const restartButton = document.getElementById('restartButton');
 let score = 0;
 
 const disableScroll = () => {
-    document.body.style.overflow = 'hidden';
+    // Impedir scroll em dispositivos móveis
+    document.addEventListener('touchmove', preventDefault, { passive: false });
+    // Impedir scroll em desktop
+    document.addEventListener('wheel', preventDefault, { passive: false });
+}
+// Função auxiliar para cancelar o comportamento padrão do evento
+const preventDefault = (event) => {
+    event.preventDefault();
 }
 disableScroll();
 
