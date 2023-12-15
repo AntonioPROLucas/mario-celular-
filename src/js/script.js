@@ -6,6 +6,11 @@ const scoreDisplay = document.querySelector('.score');
 const restartButton = document.getElementById('restartButton');
 let score = 0;
 
+const disableScroll = () => {
+    document.body.style.overflow = 'hidden';
+}
+disableScroll();
+
 const jump = () => {
     mario.classList.add('jump');
     setTimeout(()=>{
@@ -93,6 +98,8 @@ const restartGame = () => {
      location.reload();
 };
 
-document.addEventListener('keydown', jump);
+// Adicione um listener para o evento touchstart no documento
+document.addEventListener('touchstart', jump);
+
 // Adiciona um ouvinte de eventos ao botão de reinício
 restartButton.addEventListener('click', restartGame);
